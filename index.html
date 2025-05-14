@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Zin</title>
+  </head>
+  <body>
+    <!-- Background Animation -->
+  <canvas id="sakura-canvas"></canvas>
+  <div class="snow-container" id="snowfall"></div>
+
+  <div class="container">
+    <img src="public/zin.jpg" alt="Zin" class="zin-photo" />
+    <h1>🎂 Happy Birthday Zin Witt Yee Phyo 🎉</h1>
+    <p class="love-note">You are turning <span id="zin-age"></span> today!</p>
+    <p class="message">
+      Even across oceans, you're in my heart.<br>
+      You are beautiful, strong, unforgettable.<br><br>
+      May your day be full of light and love 🌸<br><br>
+      — With love, <br><strong>Thu Ya Kyaw</strong>
+    </p>
+    <button id="play-music">💖 Play Our Song</button>
+  </div>
+
+  <audio id="birthday-audio" src="public/sound.mp3"></audio>
+   
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
+    </script>
+  </body>
+</html>

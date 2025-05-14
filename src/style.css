@@ -1,0 +1,102 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: radial-gradient(circle at center, #ffd6e0, #fff5f9);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  text-align: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+  z-index: 10;
+}
+
+.zin-photo {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #d6336c;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.love-note {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.message {
+  font-size: 1rem;
+  line-height: 1.6;
+  background: #fff0f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #ff66a3;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e05590;
+}
+
+#sakura-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.snow-container {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1.5rem;
+  user-select: none;
+  position: absolute;
+  animation: fall linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100vh); }
+}
+
+/* iPhone Responsive */
+@media screen and (max-width: 428px) {
+  h1 { font-size: 1.5rem; }
+  .message { font-size: 0.95rem; }
+  button { width: 100%; padding: 14px 0; font-size: 1rem; }
+}

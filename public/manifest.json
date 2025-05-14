@@ -1,0 +1,16 @@
+{
+  "name": "Happy Birthday Zin",
+  "short_name": "Zin's B-Day",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffe6f0",
+  "theme_color": "#ff66a3",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/zin-photo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
