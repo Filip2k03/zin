@@ -1,5 +1,5 @@
 // 🎂 Calculate Age
-const birthday = new Date("2000-05-15");
+const birthday = new Date("2001-05-15");
 const today = new Date();
 let age = today.getFullYear() - birthday.getFullYear();
 const m = today.getMonth() - birthday.getMonth();
